@@ -1,0 +1,23 @@
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio">
+    <div class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="section-head-1 col-sm-12" style="text-align: center;">
+                    <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> Projects</h4>
+                    <p>The objective of IT Company is to enable a large number of youth to take up <br>industry-relevant skill training that will help them<br> in securing a better livelihood.
+                    </p>
+                </div>
+                {% for portfolio in portfolio_details %}
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_four"><a href="{{portfolio.prortfolio_link}}"><img style="height: 50px; width: 50px;" src="{{portfolio.portfolio_image.url}}" alt="{{portfolio.portfolio_title}}"></a></span>
+                        <h6>{{portfolio.portfolio_title}}</h6>
+                        <p>{{portfolio.portfolio_description}}<br><br><br></p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+<!-- Clients -->
+<section id="clients" class="clients">
+    <div class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Clients</h2>
+                <p>We don't just build softwares, we build your business.</p>
+            </div>
+            <div class="owl-carousel clients-carousel">
+                {% for client in client_details %}
+                <a href="{{client.client_website_link}}"><img src="{{client.client_image.url}}" alt="{{client.client_name}}" style="height: 100px; width: 100px;"></a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h1 class="heading">get in touch</h1>
+    <div class="contact-in">
+        <div class="contact-map">
+            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Prof%20Dr%20Ronak%20Panchal%2018%20Sai%20Ashish%20Bunglows,%20Baben,%20Bardoli,%20Gujarat,%20India+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-form">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
+                <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="contact-form-phone">
+                <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
+                <textarea placeholder="Your Message" name="yourmessage" class="contact-form-txtarea" required></textarea>
+                <input type="submit" value="Submit" name="submit" class="contact-form-btn">
+            </form>
+        </div>
+    </div>
+</section>

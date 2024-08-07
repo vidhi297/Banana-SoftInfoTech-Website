@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- Breadcrumbs -->
+    <div id="home" class="home">
+        <h3>About Us</h3>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'IndexPage' %}">Home</a></li>
+            <li class="breadcrumb-item">About</li>
+        </ol>
+    </div>
+
+    <!-- About Us -->
+    <section id="about" class="about">
+
+        <div>
+            <h3 class="heading">About Us</h3>
+            <div class="row">
+                <p class="content">Welcome to Banana SoftInfoTech! We are dedicated to [briefly describe your mission or purpose].
+                    <br>
+                    {% for about in about_details %}
+                    <strong>Our Mission</strong><br>
+                    {{about.about_our_mission}}
+                    <br>
+                    <strong>What We Do</strong><br>
+                    {{about.about_what_we_do}}
+                    <br>
+                    <strong>Our Team</strong><br>
+                    {{about.about_our_team}}
+                    <br>
+                    <strong>Why Choose Us?</strong><br>
+                    {{about.about_why_choose_us}}
+                    <br>
+                    <strong>Contact Us</strong><br>
+                    {{about.about_contact_us}}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+<!-- Servies -->
+<section id="services" class="services">
+    <div class="pt-5 pb-5" style="background-color: #f2f2f2;">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12" id="service">
+                    <h1>Our Services</h1>
+                    <p>We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
+                    </p>
+                </div>
+                {% for service in service_details %}
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
+                        <h6>{{service.service_title}}</h6>
+                        <p>{{service.service_description}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

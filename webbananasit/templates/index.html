@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main id="main">
+
+    <!-- CTA -->
+    <section id="home" class="home">
+        <h1>Bring your Business Online</h1>
+        <h2>with <strong>Banana SoftInfoTech</strong> Company Services</h2>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+    </section>
+    
+    <!-- About Us -->
+    <section id="about" class="about">
+        <h1 class="heading">about us</h1>
+        <div class="row">
+            <div class="content">
+                {% for about in about_details %}
+                <h3>{{about.about_text_first}}</h3>
+                <p>{{about.about_text_second}}<br>
+                    {{about.about_text_third}}</p>
+                {% endfor %}
+                <a href="{% url 'AboutPage' %}"><button class="btn">Read More</button></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Servies -->
+    <section id="services">
+        {% include 'services.html' %}
+    </section>
+
+    <!-- Counter Section -->
+    <section id="counters">
+        {% include 'counter.html' %}
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        {% include 'portfolio.html' %}
+    </section>
+
+    <!-- Approach Section -->
+    <div class="communicate">
+        {% for contact_text in contact_text_details %}
+        <h3>{{contact_text.contact_text_first}}</h3>
+        <p>{{contact_text.contact_text_second}}</p>
+        {% endfor %}
+        <a href="#contact"><button class="btn">Contact Now</button></a>
+    </div>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        {% include 'testimonials.html' %}
+    </section>
+
+    <!-- Clients -->
+    <section id="clients">
+        {% include 'clients.html' %}
+    </section>
+
+    <!-- Our Team -->
+    <section id="team">
+        {% include 'ourteam.html' %}
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        {% include 'contact.html' %}
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        {% include 'faq.html' %}
+    </section>
+
+</main>
+
+{% endblock %}

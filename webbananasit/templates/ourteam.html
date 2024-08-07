@@ -1,0 +1,24 @@
+<!-- Our Team -->
+<section id="team" class="team" style="margin-top: 7rem;">
+    <h1 class="heading" style="margin-top: -1.5rem;" id="team">Our Team</h1>
+    <p>Hardworking People behind the Successful Outcomes</p>
+    {% for member in team_details %}
+    <div class="row">
+        <div class="card">
+            <div class="image">
+                <img src="{{member.member_image.url}}" alt="{{member.member_name}}">
+            </div>
+            <div class="info">
+                <h3>{{member.member_name}}</h3>
+                <span>{{member.member_designation}}</span>
+                <div class="icons">
+                    <a href="{{member.member_facebook}}" class="fab fa-facebook-f"></a>
+                    <a href="{{member.member_twitter}}" class="fab fa-twitter"></a>
+                    <a href="{{member.member_instagram}}" class="fab fa-instagram"></a>
+                    <a href="{{member.member_linkedin}}" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>

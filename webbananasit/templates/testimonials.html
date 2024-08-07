@@ -1,0 +1,25 @@
+<!-- Testimonials -->
+<section id="testimonials">
+    <div class="testimonials mt-100">
+        <div class="container">
+            <div class="section-header" style="text-align: center;">
+                <h2 style="margin-top: -15rem;">Testimonials</h2>
+                <p style="font-size: 2rem;">See what people have to say about us</p>
+            </div>
+            <div class="owl-carousel testimonials-carousel">
+                {% for testimonial in testimonial_details %}
+                <div class="testimonial-item row align-items-center">
+                    <div class="testimonial-img">
+                        <img src="{{testimonial.testimonial_image.url}}" alt="{{testimonial.testimonial_name}}">
+                    </div>
+                    <div class="testimonial-text">
+                        <h3>{{testimonial.testimonial_name}}</h3>
+                        <h4>{{testimonial.testimonial_designation}}</h4>
+                        <p>{{testimonial.testimonial_description}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

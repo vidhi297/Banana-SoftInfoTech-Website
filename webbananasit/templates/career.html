@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- Breadcrumbs -->
+    <div id="home" class="home">
+        <h3>Apply Now!</h3>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'IndexPage' %}">Home</a></li>
+            <li class="breadcrumb-item">Career</li>
+        </ol>
+    </div>
+
+    <!-- Career -->
+    <!-- Job Application Form -->
+    <section id="career-heading" class="career-heading">
+        <h1 class="heading">Career</h1>
+        <p>Job Opening in IT Company. Apply Now!</p>
+    </section>
+    <div class="career">
+        <div class="career-form">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Name" class="career-form-txt" required>
+                <input type="tel" id="phone" name="contact" pattern="[0-9]{10}" required placeholder="Contact Number" maxlength="10" class="career-form-phone">
+                <input type="email" name="email" placeholder="Email" class="career-form-email" required>
+                <div class="radio-class">
+                    <h2 class="name">Apply For Which Post?</h2>
+                    {% for post in job_post_details %}
+                    <label class="radio">
+                        <input type="radio" name="jobpost" value="{{post.job_post}}">
+                        <span class="checkmark"></span>
+                        {{post.job_post}}
+                    </label>
+                    {% endfor %}
+                </div>
+                <input type="number" id="experience" name="experience" required placeholder="Years of Experience" class="career-form-experience">
+                <textarea placeholder="Other Details" name="otherdetails" class="career-form-txtarea" required></textarea>
+                <div class="file">
+                    <h2 class="name">Upload Your Resume</h2>
+                    <small class="form-text text-muted">Upload your Resume (in PDF format)</small>
+                    <input class="upload" type="file" name="seeker_resume" required accept=".pdf"><br><br><br>
+                </div>
+                <input type="submit" value="Submit" name="submit" class="career-form-btn">
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

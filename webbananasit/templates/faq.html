@@ -1,0 +1,19 @@
+<!-- FAQ -->
+<section id="faq" class="faq">
+    <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
+    <div class="row">
+        <div class="accordion-container">
+            {% for faq in faq_details %}
+            <div class="accordion">
+                <div class="accordion-header">
+                    <span>+</span>
+                    <h3>{{faq.faq_question}}</h3>
+                </div>
+                <div class="accordion-body">
+                    <p>{{faq.faq_answer}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
