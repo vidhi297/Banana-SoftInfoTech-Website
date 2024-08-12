@@ -18,25 +18,27 @@
         <div>
             <h3 class="heading">About Us</h3>
             <div class="row">
-                <p class="content">Welcome to Banana SoftInfoTech! We are dedicated to [briefly describe your mission or purpose].
-                    <br>
-                    {% for about in about_details %}
-                    <strong>Our Mission</strong><br>
-                    {{about.about_our_mission}}
-                    <br>
-                    <strong>What We Do</strong><br>
-                    {{about.about_what_we_do}}
-                    <br>
-                    <strong>Our Team</strong><br>
-                    {{about.about_our_team}}
-                    <br>
-                    <strong>Why Choose Us?</strong><br>
-                    {{about.about_why_choose_us}}
-                    <br>
-                    <strong>Contact Us</strong><br>
-                    {{about.about_contact_us}}
-                    {% endfor %}
-                </p>
+                <div class="container content">
+                    <p>Welcome to Banana SoftInfoTech! We are dedicated to deliver cutting-edge software solutions that empower businesses to thrive in the digital age.
+                        <br><br>
+                        {% for about in about_details %}
+                        <strong>Our Mission</strong><br>
+                        {{about.about_our_mission}}
+                        <br><br>
+                        <strong>What We Do</strong><br>
+                        {{about.about_what_we_do}}
+                        <br><br>
+                        <strong>Our Team</strong><br>
+                        {{about.about_our_team}}
+                        <br><br>
+                        <strong>Why Choose Us?</strong><br>
+                        {{about.about_why_choose_us}}
+                        <br><br>
+                        <strong>Contact Us</strong><br>
+                        {{about.about_contact_us}}
+                        {% endfor %}
+                    </p>
+                </div>
             </div>
         </div>
 
