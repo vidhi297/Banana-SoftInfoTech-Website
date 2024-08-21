@@ -1,0 +1,951 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main id="main">
+
+    <!-- Breadcrumbs -->
+    <div id="home" class="home">
+        <h3>Go through courses below!</h3>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'IndexPage' %}">Home</a></li>
+            <li class="breadcrumb-item">Courses</li>
+        </ol>
+    </div>
+
+    <!-- Courses Content -->
+    <section id="courses" class="courses">
+        <div>
+            <h3 id="index" class="heading">Courses</h3>
+            <div class="row">
+                <div class="container content">
+                    <ul>
+                        <li><a href="#html">HTML Course</a></li>
+                        <li><a href="#ui_ux">UI/UX Design Course</a></li>
+                        <li><a href="#python">Python Course</a></li>
+                        <li><a href="#c">C Programming Course</a></li>
+                        <li><a href="#cplus">C++ Programming Course</a></li>
+                        <li><a href="#django">Python Framework - Django Course</a></li>
+                        <li><a href="#r">R for Data Analysis Course</a></li>
+                        <li><a href="#data_analysis">Data Analysis with Python Course</a></li>
+                        <li><a href="#ai">AI Engineering Course</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container content">
+                    <p>
+                        <h3 id="html"><strong>HTML</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Coding Basics: Intro to HTML Syntax
+                                1.1.	The HTML, head, title, & body tags
+                                1.2.	Headings, paragraphs, & lists
+                                1.3.	The strong & em tags
+                                1.4.	The doctype
+                                1.5.	The Lang attribute
+                                1.6.	The meta tag & the Unicode character set
+
+                            2.	Coding Links: Absolute & Relative URLs
+                                2.1.	Anchor tags &hrefs
+                                2.2.	Linking to other websites
+                                2.3.	Linking to pages within a website
+                                2.4.	Opening a link in a new browser window/tab
+
+                            3.	Adding Images
+                                3.1.	The break tag
+                                3.2.	The image tag & source attribute
+                                3.3.	Using the width, height, & alt attributes
+                                3.4.	Using horizontal rules
+
+                            4.	Intro to Cascading Style Sheets (CSS)
+                                4.1.	The style tag
+                                4.2.	Tag selectors
+                                4.3.	The font-size, font-family, colour, & line-height properties
+                                4.4.	Hexadecimal colour codes
+
+                            5.	CSS Class Selectors
+                                5.1.	The class attribute
+                                5.2.	CSS class selectors
+                                5.3.	The span tag
+                                5.4.	CSS opacity
+
+                            6.	Div Tags, ID Selectors, & Basic Page Formatting
+                                6.1.	Dividing up content with the div tag
+                                6.2.	Assigning IDs to divs
+                                6.3.	Setting width & max-width
+                                6.4.	CSS background-colour
+                                6.5.	Adding padding inside a div
+                                6.6.	Centring content
+                                6.7.	CSS borders
+                                6.8.	CSS shorthand & the DRY principle
+
+                            7.	Using Browser Developer Tools
+                                7.1.	Opening the DevTools in Chrome
+                                7.2.	Editing HTML in the DevTools Elements panel
+                                7.3.	Enabling, disabling, & editing CSS in the DevTools
+                                7.4.	Using DevTools to fine-tune your CSS
+                                7.5.	Hexadecimal shorthand
+
+                            8.	HTML5 Semantic Elements & Validating HTML
+                                8.1.	The outline algorithm
+                                8.2.	The header, nav, aside, & footer elements
+                                8.3.	Understanding articles & sections
+                                8.4.	The main element
+                                8.5.	The figure & figcaption elements
+                                8.6.	Checking for errors: validating your code
+
+                        </span></pre>
+
+                        <h3 id="ui_ux"><strong>UI/UX Design</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            UI Fundamentals
+                            1.	How & when to use common UI pattern
+                                1.1.	Menus
+                                1.2.	Tabs 
+                                1.3.	Bottom tab bar 
+                                1.4.	Buttons (including “Call to action” or CTA) 
+                                1.5.	Accordion
+                                1.6.	Carouse
+                                1.7.	Breadcrumbs 
+                                1.8.	Modals
+                                1.9.	Forms
+
+                            2.	Learn Figma - Create Visual Designs & Clickable Prototypes
+                                2.1.	Learn how to use Figma to create clickable prototypes to show users for testing, or for clients to see your work.
+                                2.2.	Design the UI (user interface of websites, apps, etc.) in Figma.
+
+                            3.	UX Design Concepts - Intersection of Design, Technology, & Business
+                                3.1.	Through critical analysis understand how user experience as a field sits in the intersection of different areas of the product. 
+                                3.2.	What is the difference between User Experience Design and User Interface Design?
+                                3.3.	Learn about heuristics and apply heuristic evaluation to websites.
+                                3.4.	Competitive Research
+
+                            4.	Knowing Your User
+                                4.1.	Learn how to structure and conduct user interviews to better identify the needs and current behaviours of the user.
+                                4.2.	Understand how to engage the user to work through assumptions and preconceived notions that arise during the process.
+                                4.3.	Write down assumptions for your class project.
+
+                            5.	User Research Through Interviews
+                                5.1.	Refine user interview questions.
+                                5.2.	Interview classmates for your project.
+
+                            6.	Refining User Research and Creating Personas
+                                6.1.	Create user personas from the interviews to represent the goals and behaviours of the users within the system.
+                                6.2.	Develop user scenarios to show when and how the user engages with the system.
+
+                            7.	Synthesis of User Research, Journey Maps, and User Flows
+                                7.1.	Continue to synthesize results of user research to find patterns.
+                                7.2.	Create a journey map for your project. 
+                                7.3.	Think through the different features of the system by building user flows.
+                                7.4.	Take the written narrative to the next level through sketching and improvising using techniques such as storyboarding and body storming.
+
+                            8.	Wireframing, Sketching, Prototyping
+                                8.1.	Practice a sketching session for an existing website or mobile application of your choice.
+                                8.2.	Start with sketching on a whiteboard or your notebook.
+                                8.3.	Sketch wireframes for your class project. Learn the power of prototyping and testing an idea.
+                                8.4.	Understand different methods of prototyping and their levels of fidelity.
+                                8.5.	Discuss the motivation behind the prototyping, such as newly discovered user goals, business needs and improved functionality.
+
+                            9.	Prototyping & User Testing
+                                9.1.	User testing methods and strategies.
+                                9.2.	Do’s and don’ts of user testing.
+                                9.3.	Do a user test on your project with a classmate? Clearly list the assumptions and test your concepts.
+                                9.4.	Work on multiple iterations of the prototype based on the test results.
+
+                            10.	 Iterating the Prototype and Further User Testing
+                                10.1.	Report conclusions based on user testing. 
+                                10.2.	User testing reports.
+                                10.3.	Rework the prototype based on user testing conclusions.
+
+                            Case Studies
+                            11.	 Building Case Studies
+                                11.1.	Look at case study examples.
+                                11.2.	Finish your clickable prototype. 
+                                11.3.	Using a compilation of user research, prototypes, photographs, and user research, build your case study.
+                                11.4.	Present class projects as case studies on-screen.
+
+                            Creative Briefs
+                            12.	 Getting to Know a Project: Creative Briefs
+                                12.1.	What is a Creative Brief?
+                                12.2.	What to Include in a Creative Brief
+
+                            Wireframing for UI Designers
+                            13.	 Learning from Existing Websites & Apps
+                                13.1.	What Works & What Does Not?
+
+                            14.	 Colour
+                                14.1.	Colour Harmonies
+                                14.2.	Creating Contrast with Colour
+                                14.3.	Guidelines for Proper Colour Usage
+
+                            15.	 Typography & Fonts
+                                15.1.	Display Text (Such as Headings) versus Body Text 
+                                15.2.	Legibility
+                                15.3.	Type Trends
+                                15.4.	Typeface Selection & Pairing 
+                                15.5.	Where to Get Web Fonts
+                                15.6.	Ideal Line Height
+                                15.7.	Column Width (Line Length) 
+                                15.8.	Hyphenation & Justification
+
+                            16.	 Design Elements
+                                16.1.	Proximity 
+                                16.2.	Similarity
+                                16.3.	Continuity
+
+                            17.	 Trends in Web & App Design
+                                17.1.	Analysis of Example Websites & Apps
+
+                            18.	 Design Patterns
+                                18.1.	Example Design Patterns
+
+                            19.	 Multiple Screen Sizes
+                                19.1.	Responsive Web Design
+                                19.2.	Mobile Considerations & Limitations
+                                19.3.	Discoverability Challenges
+                                19.4.	Mobile Navigation
+                                19.5.	Phone vs Tablet App Design
+
+                            20.	 Workflow: Idea to Design
+                                20.1.	Example Web & App Design Workflows
+
+                            The Business of UX & UI Design
+                            21.	 The UX & UI Design Industry
+                                21.1.	Getting into the business: strategies and ideas.
+                                21.2.	Resources
+
+                            Portfolio Website & Job Preparation
+                            22.	 Creating Your Portfolio Website
+                                22.1.	Examples of UX & UI portfolio websites
+                                22.2.	What you should include on your portfolio website
+                                22.3.	Get 1-on-1 feedback on your case studies & portfolio website
+
+                            23.	 Resume Development
+                                23.1.	What you should include on your resume
+                                23.2.	Get 1-on-1 feedback on your resume
+
+                        </span></pre>
+
+                        <h3 id="python"><strong>Python Programming</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Introduction
+                                1.1.	To get started with Python
+                                1.2.	Your first Python Program
+                                1.3.	Python Comments
+
+                            2.	Python Fundamentals
+                                2.1.	Python Variables, Constants and Literals
+                                2.2.	Python Type Conversion
+                                2.3.	Python Basic Input and Output
+                                2.4.	Python Operators
+
+                            3.	Python Flow Control
+                                3.1.	Python if...else Statement
+                                3.2.	Python for Loop
+                                3.3.	Python while  Loop
+                                3.4.	Python break and continue
+                                3.5.	Python pass Statement
+
+                            4.	Python Data Types
+                                4.1.	Python Numbers, Type Conversion and Mathematics
+                                4.2.	Python List
+                                4.3.	Python Tuple
+                                4.4.	Python Sets
+                                4.5.	Python Dictionary
+
+                            5.	Python Functions
+                                5.1.	Python Functions
+                                5.2.	Python Function Arguments
+                                5.3.	Python Variable Scope
+                                5.4.	Python Global Keyword
+                                5.5.	Python Recursion
+                                5.6.	Python Modules
+                                5.7.	Python Package
+                                5.8.	Python Main function
+
+                            6.	Python Files
+                                6.1.	Python Directory and File Management
+                                6.2.	Python CSV: Read and Write CSV files
+                                6.3.	Reading CSV files in Python
+                                6.4.	Writing  CSV files in Python
+
+                            7.	Python Exception Handling
+                                7.1.	Python Exceptions
+                                7.2.	Python Exception Handling
+                                7.3.	Python Custom Exceptions
+
+                            8.	Python Object and class
+                                8.1.	Python Objects and Classes
+                                8.2.	Python Inheritance
+                                8.3.	Python Multiple  Inheritance
+                                8.4.	Polymorphism in Python
+                                8.5.	Python Operator Overloading
+
+                            9.	Python Advanced Topics
+                                9.1.	List Comprehension
+                                9.2.	Python Lambda/Anonymous Function
+                                9.3.	Python Iterators
+                                9.4.	Python Generators
+                                9.5.	Python Namespace and Scope
+                                9.6.	Python Closures
+                                9.7.	Python Decorators
+                                9.8.	Python @property decorator
+                                9.9.	Python RegEx
+
+                            10.	 Python Date and Time
+                                10.1.	Python datetime
+                                10.2.	Python strftime()
+                                10.3.	Python strptime()
+                                10.4.	How to get current date and time in Python?
+                                10.5.	Python Get Current Time
+                                10.6.	Python timestamp to datetime and vice-versa
+                                10.7.	Python time Module
+                                10.8.	Python sleep()
+
+                            11.	 Additional Topic
+                                11.1.	Precedence and Associativity of Operators in Python
+                                11.2.	Python Keywords and Identifiers
+                                11.3.	Python Asserts
+                                11.4.	Python Json
+                                11.5.	Python pip
+                                11.6.	Python *args and **kwargs
+
+                        </span></pre>
+
+                        <h3 id="c"><strong>C Programming</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Introduction to Programming
+                                1.1.	 Program and Programming
+                                1.2.	 Programming Languages
+                                1.3.	 Types of software's
+                                1.4.	 Operating Systems
+                                1.5.	 Compiler, Interpreter, Loader and Linker
+
+                            2.	Fundamentals in C
+                                2.1.	 History of 'C'
+                                2.2.	 A Simple C Program
+                                2.3.	 Program execution phases
+                                2.4.	 Backslash character constants
+                                2.5.	 Character set
+                                2.6.	 Constants
+                                2.7.	 Number systems
+                                2.8.	 Format specifiers
+                                2.9.	 Identifiers
+                                2.10.	 Keywords
+                                2.11.	 Variables
+                                2.12.	 Data Types
+                                2.13.	 Declaration of Variable
+                                2.14.	 Assigning Values to Variables
+                                2.15.	 Initialization
+                                2.16.	 Comments
+                                2.17.	 Const Qualifier
+                                2.18.	 Basic Structure of a 'C' program
+                                2.19.	 Programming Examples
+
+                            3.	Operators and Expressions
+                                3.1.	 Arithmetic operators
+                                3.2.	 Increment and decrement operators
+                                3.3.	 Relational operators
+                                3.4.	 Logical operators
+                                3.5.	 The bitwise operators
+                                3.6.	 The assignment operators
+                                3.7.	 The conditional operator
+                                3.8.	 The size of operator
+                                3.9.	 The comma operator
+                                3.10.	 Type casting operator
+                                3.11.	 Other operators
+                                3.12.	 Precedence and order of evaluation
+                                3.13.	 Programming Examples
+
+                            4.	Data types
+                                4.1.	 Modifiers
+                                4.2.	 Format specifiers
+                                4.3.	 Dealing with each data types
+                                4.4.	 Memory representation of each type
+                                4.5.	 Programming Examples
+
+                            5.	Input-Output Library Functions
+                                5.1.	 Unformatted I-O Functions
+                                5.2.	 Single Character Input-Output
+                                5.3.	 String Input-Output
+                                5.4.	 Formatted I-O Functions
+                                5.5.	 printf() Width Specifier
+                                5.6.	 scanf() Width Specifier
+                                5.7.	 Programming Examples
+
+                            6.	Control Statements
+                                6.1.	 Conditional Control Statements
+                                6.2.	 if
+                                6.3.	 if-else
+                                6.4.	 nested if-else
+                                6.5.	 else-if ladder
+                                6.6.	 Multiple Branching Control Statement
+                                6.7.	 switch-case
+                                6.8.	 Loop Control Statements
+                                6.9.	 while
+                                6.10.	 do-while
+                                6.11.	 for
+                                6.12.	 Nested Loops
+                                6.13.	 Jump Control statements
+                                6.14.	 break
+                                6.15.	 continue
+                                6.16.	 goto
+                                6.17.	 exit
+                                6.18.	 return
+                                6.19.	 Programming Examples
+
+                            7.	Function
+                                7.1.	 What is function?
+                                7.2.	 Why function?
+                                7.3.	 Advantages of using functions
+                                7.4.	 Function Prototype
+                                7.5.	 Defining a function
+                                7.6.	 Calling a function
+                                7.7.	 Return statement
+                                7.8.	 Types of functions
+                                7.9.	 Recursion
+                                7.10.	 Nested functions
+                                7.11.	 main() function
+                                7.12.	 Library Function
+                                7.13.	 Local and global variables
+                                7.14.	 Programming Examples
+
+                            8.	Function
+                                8.1.	 Types of storage class
+                                8.2.	 Scoping rules
+                                8.3.	 Dealing with all storage classes
+                                8.4.	 Programming Examples
+
+                            9.	Pointer
+                                9.1.	 Def of Pointer
+                                9.2.	 Declaration of Pointer Variables
+                                9.3.	 Assigning Address to Pointer
+                                9.4.	 Variables
+                                9.5.	 De-referencing Pointer Variables
+                                9.6.	 Pointer to Pointer
+                                9.7.	 Pointer Arithmetic
+                                9.8.	 Pointer comparisons
+                                9.9.	 De-reference and increment pointer
+                                9.10.	 Programming Examples
+
+                            10.	 Pointer and Function
+                                10.1.	 Parameter Passing Techniques – call by value, call by address
+                                10.2.	 Using Pointers as Arguments Function Returning value
+                                10.3.	 Returning More than one value From A Function
+                                10.4.	 Functions Returning Address
+                                10.5.	 Function Returning Pointers
+                                10.6.	 Dangling pointer
+                                10.7.	 Pointer to a Function
+                                10.8.	 Calling A function through function pointer
+                                10.9.	 passing A function's address as an
+                                10.10.	 Argument to other function
+                                10.11.	 Functions with variable number of arguments
+                                10.12.	 Programming Examples
+
+                            11.	 Array
+                                11.1.	 One dimensional arrays
+                                11.2.	 Declaration of 1D arrays
+                                11.3.	 Initialization of 1D arrays
+                                11.4.	 Accessing element of 1D arrays
+                                11.5.	 Reading and displaying elements
+                                11.6.	 Two dimensional arrays
+                                11.7.	 Declaration of 2D arrays
+                                11.8.	 Initialization of 2D arrays
+                                11.9.	 Accessing element of 2D arrays
+                                11.10.	 Reading and displaying elements
+                                11.11.	 Programming Examples
+
+                            12.	 Pointer and Array
+                                12.1.	 Pointer and one dimensional arrays
+                                12.2.	 Subscripting pointer variables
+                                12.3.	 Pointer to an array
+                                12.4.	 Array of pointers
+                                12.5.	 Pointers and two dimensional arrays
+                                12.6.	 Subscripting pointer To an array
+                                12.7.	 Programming Examples
+
+                            13.	 Array and Function
+                                13.1.	 1D array and function
+                                13.2.	 Passing individual array elements to a function passing individual array elements address to a function
+                                13.3.	 passing whole 1d array to a function
+                                13.4.	 2D array and function
+                                13.5.	 passing individual array elements to a function
+                                13.6.	 passing individual array elements address to a function
+                                13.7.	 passing whole 2d array to a function
+                                13.8.	 using arrays of function pointer
+                                13.9.	 Programming Examples
+
+                            14.	 Dynamic memory allocation
+                                14.1.	 malloc()   
+                                14.2.	 calloc()
+                                14.3.	 realloc()
+                                14.4.	 free()
+                                14.5.	 Core dump
+                                14.6.	 Memory leak
+                                14.7.	 Dynamic 1D and 2D Arrays
+                                14.8.	 Programming Examples
+
+                            15.	 Strings
+                                15.1.	 strings versus character arrays
+                                15.2.	 Initializing strings
+                                15.3.	 Reading string
+                                15.4.	 Displaying string
+                                15.5.	 The %s format specifier
+                                15.6.	 The gets() and puts() functions
+                                15.7.	 string handling functions
+                                15.8.	 string pointers
+                                15.9.	 Two-dimensional character arrays or array of string
+                                15.10.	 array of pointers to strings
+                                15.11.	 Programming Examples
+
+                            16.	 Command line arguments
+                                16.1.	 what is command prompt?
+                                16.2.	 why command line?
+                                16.3.	 What are command line arguments?
+                                16.4.	 Programs using command line
+
+                            17.	 Preprocessor
+                                17.1.	 What is preprocessing?
+                                17.2.	 Macro expansions
+                                17.3.	 File inclusions
+                                17.4.	 Conditional compilation
+                                17.5.	 Programming Examples
+
+                            18.	 Structure
+                                18.1.	 Why is structure used?
+                                18.2.	 What is structure?
+                                18.3.	 Advantages of structures
+                                18.4.	 Defining a Structure
+                                18.5.	 Declaration of Structure Variables
+                                18.6.	 Initialization of Structure Variables
+                                18.7.	 Accessing Structure Members
+                                18.8.	 Storage of Structures in Memory
+                                18.9.	 Size of Structures
+                                18.10.	 Reading and Displaying Structure Variables
+                                18.11.	 Assignment of Structure Variables
+                                18.12.	 Pointers to structures
+                                18.13.	 Array of structures
+                                18.14.	 Arrays within structures
+                                18.15.	 Nested structures
+                                18.16.	 Self-referential structures
+                                18.17.	 Programming Examples
+
+                            19.	 Structure and Function
+                                19.1.	 Passing structure member to a function
+                                19.2.	 Passing structure variable to a function
+                                19.3.	 Passing structure variable address to a function
+                                19.4.	 Passing array of structure to a function
+                                19.5.	 Returning a structure variable from function
+                                19.6.	 Returning a structure variable address from function
+                                19.7.	 Returning structure variable from a function
+                                19.8.	 Programming Examples
+
+                            20.	 Union and Enumeration and typedef
+                                20.1.	 What are unions?
+                                20.2.	 Structures versus unions
+                                20.3.	 Working with unions
+                                20.4.	 Initialising unions
+                                20.5.	 Advantages of unions
+                                20.6.	 enum keyword
+                                20.7.	 typedef keyword
+                                20.8.	 Programming Examples
+
+                            21.	 File Handling
+                                21.1.	 Using files in C
+                                21.2.	 Buffer and streams
+                                21.3.	 Working with text files and Binary
+                                21.4.	 Files
+                                21.5.	 File operations using std. library and system calls
+                                21.6.	 File management I/O functions
+                                21.7.	 Random Access Files
+                                21.8.	 Programming Examples
+
+                        </span></pre>
+
+                        <h3 id="cplus"><strong>C++ Programming</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Introduction to C++
+                                1.1.	Introduction to C++ Programming
+                                1.2.	Features of C++
+                                1.3.	Difference between C and C++
+
+                            2.	C++ Basics
+                                2.1.	Writing First C++ Program
+                                2.2.	C++ Basic Syntax
+                                2.3.	Comments
+                                2.4.	Tokens
+                                2.5.	Keywords
+                                2.6.	Difference between keywords and identifiers
+
+                            3.	C++ Variables and Constants
+                                3.1.	Variables
+                                3.2.	Constants
+                                3.3.	Scope of Variables
+                                3.4.	Storage Classes
+                                3.5.	Static Keyword
+
+                            4.	C++ Data Types and Literals
+                                4.1.	Data Types
+                                4.2.	Literals
+                                4.3.	Derived Data Types
+                                4.4.	User Defined Data Types
+                                4.5.	Data Types Ranges and their macros
+                                4.6.	Type Modifiers
+                                4.7.	Type Conversion
+                                4.8.	Casting Operators
+
+                            5.	C++ Operators
+                                5.1.	Arithmetic Operators
+                                5.2.	Unary Operator
+                                5.3.	Bitwise Operator
+                                5.4.	Assignment Operator
+                                5.5.	sizeof Operator
+                                5.6.	Scope Resolution Operator
+
+                            6.	C++ Input/Output
+                                6.1.	Introduction to Input/Output in C++
+                                6.2.	cin
+                                6.3.	cout
+                                6.4.	cerr – Standard Error Stream Object
+                                6.5.	Manipulators
+
+                            7.	C++ Control Statements
+                                7.1.	What is Decision Making?
+                                7.2.	if statement
+                                7.3.	if...else statement
+                                7.4.	if else if ladder
+                                7.5.	switch statement
+                                7.6.	jump statements
+                                7.7.	What are Loops?
+                                7.8.	for loop
+                                7.9.	Range-based for loop
+                                7.10.	while loop
+                                7.11.	do while loop
+
+                            8.	C++ Functions
+                                8.1.	What is Function
+                                8.2.	return statement
+                                8.3.	Parameter passing
+                                8.4.	Difference between call by value and call reference
+                                8.5.	Default Arguments
+                                8.6.	Inline Functions
+                                8.7.	Lambda Expression
+
+                            9.	C++ Pointers and References
+                                9.1.	What is Pointer?
+                                9.2.	Dangling, void, null and wild pointers
+                                9.3.	Application of Pointers
+                                9.4.	Understanding nullptr
+                                9.5.	What is Reference?
+                                9.6.	Pointers v/s References
+                                9.7.	Passing by Pointers v/s Passing by Reference
+
+                            10.	 C++ Arrays
+                                10.1.	Variable Length Arrays
+                                10.2.	Pointer to an Array
+                                10.3.	How to print size of array parameter
+                                10.4.	Pass array to functions
+                                10.5.	What is Array Decay?
+
+                            11.	 C++ Strings
+                                11.1.	What is String?
+                                11.2.	std::string class
+                                11.3.	Array of Strings
+                                11.4.	String Concatenation
+                                11.5.	Tokenizing a String
+                                11.6.	Substring
+
+                            12.	 C++ Structures and Unions
+                                12.1.	What is Structure?
+                                12.2.	Pointer to Structure
+                                12.3.	Self Reference Structures
+                                12.4.	What is Enumeration?
+                                12.5.	What is typedef?
+                                12.6.	Array of Structure v/s Arrays within a Structure
+
+                            13.	 C++ Dynamic Memory Management
+                                13.1.	Dynamic Memory Allocation using malloc(), calloc(), free() and realloc()
+                                13.2.	new and delete operators for dynamic memory 
+                                13.3.	new v/s malloc() and free() v/s delete
+                                13.4.	What is Memory Leak? How can we avoid?
+                                13.5.	Difference between Static and Dynamic Memory Allocation
+
+                            14.	 C++ Object-Oriented Programming(OOP)
+                                14.1.	What is OOP?
+                                14.2.	Classes and Objects
+                                14.3.	Access Modifiers
+                                14.4.	Friend class and Function
+                                14.5.	Constructors
+                                14.6.	Default constructors
+                                14.7.	Copy constructor
+                                14.8.	Destructors
+                                14.9.	Static Data Members
+                                14.10.	Static Member Function
+                                14.11.	‘this’ pointer
+                                14.12.	Scope Resolution v/s ‘this’ pointer
+                                14.13.	Local Classes
+                                14.14.	Nested Classes
+                                14.15.	Difference between Structure and Classes
+
+                            15.	 C++ Encapsulation and Abstraction
+                                15.1.	What is Encapsulation?
+                                15.2.	What is Abstraction?
+                                15.3.	Difference between Encapsulation and Abstraction
+
+                            16.	 C++ Polymorphism
+                                16.1.	What is Polymorphism?
+                                16.2.	Function Overriding
+                                16.3.	Runtime Polymorphism
+
+                            17.	 C++ Function Overloading
+                                17.1.	What is Function Overloading?
+                                17.2.	Constructor Overloading
+                                17.3.	const keyword
+                                17.4.	Function Overloading v/s Function Overriding
+                                17.5.	Advantages and Disadvantages of Function Overloading
+
+                            18.	 C++ Operator Overloading
+                                18.1.	What is operator overloading?
+                                18.2.	Types of  Operator Overloading
+                                18.3.	What are the Operators that can be and cannot be Overloaded?
+
+                            19.	 C++ Inheritance
+                                19.1.	What is Inheritance?
+                                19.2.	Inheritance Access
+                                19.3.	Multiple Inheritance
+                                19.4.	Hierarchical Inheritance
+                                19.5.	Multi-level Inheritance
+                                19.6.	Difference between Inheritance and Polymorphism
+
+                            20.	 C++ Exception Handling
+                                20.1.	What is Exception Handling?
+                                20.2.	Exception Handling using classes
+                                20.3.	Stack Unwinding
+                                20.4.	User-defined custom exception with classes
+
+                            21.	 C++ Files and Streams
+                                21.1.	What is File Handling
+                                21.2.	I/O Redirection
+
+                        </span></pre>
+
+                        <h3 id="django"><strong>Django</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Introduction to Django
+                                1.1.	What is Django?
+                                1.2.	Key Features
+                                1.3.	When to Use Django
+                            
+                            2.	Installation
+                                2.1.	Prerequisites
+                                2.2.	Installing Django
+                                2.3.	Verifying Installation
+
+                            3.	Creating a New Django Project
+                                3.1.	Creating a Project
+                                3.2.	Project Structure Overview
+                                3.3.	Running the Development Server
+
+                            4.	Creating a Django App
+                                4.1.	What is an App?
+                                4.2.	Creating an App
+                                4.3.	App Structure Overview
+
+                            5.	Models and Databases
+                                5.1.	Introduction to Models
+                                5.2.	Creating Models
+                                5.3.	Database Migrations
+
+                            6.	Views and URL Routing
+                                6.1.	Creating Views
+                                6.2.	Configuring URLs
+                                6.3.	URL Patterns
+
+                            7.	Templates
+                                7.1.	Using Templates
+                                7.2.	Template Inheritance
+                                7.3.	Static Files
+
+                            8.	Forms
+                                8.1.	Creating Forms
+                                8.2.	Handling Form Submission
+                                8.3.	Form Validation
+
+                            9.	Admin Interface
+                                9.1.	Enabling the Admin Interface
+                                9.2.	Customizing the Admin
+                                9.3.	Managing Data through Admin
+
+                            10.	User Authentication
+                                10.1.	User Registration
+                                10.2.	Login and Logout
+                                10.3.	Managing User Profiles
+
+                        </span></pre>
+
+                        <h3 id="r"><strong>R Programming</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Introduction
+                                1.1.	 Getting started with R
+                                1.2.	 R Comments
+                                1.3.	 R Variables and Constants
+                                1.4.	 R Data Types
+                                1.5.	 R Print Output
+                                1.6.	 R Numbers
+
+                            2.	R Flow Control
+                                2.1.	 R Boolean Expression
+                                2.2.	 R if…else
+                                2.3.	 R ifelse() function
+                                2.4.	 R while Loop
+                                2.5.	 R for Loop
+                                2.6.	 R break and next
+                                2.7.	 R repeat Loop
+                                2.8.	 R Function
+
+                            3.	R Data Structure
+                                3.1.	R Strings
+                                3.2.	R Vectors
+                                3.3.	R Matrix
+                                3.4.	R List
+                                3.5.	R Arrays
+                                3.6.	R Data Frame
+                                3.7.	R Factor
+
+                            4.	R Data Visualization
+                                4.1.	R Bar Plot
+                                4.2.	R Histogram
+                                4.3.	R Pie Chart
+                                4.4.	R Box Plot
+                                4.5.	R Strip Chart
+                                4.6.	R Plot Function
+                                4.7.	R Save Plot
+                                4.8.	Colors in R
+
+                            5.	R Data Manipulation
+                                5.1.	R Read and Write CSV
+                                5.2.	R Read and Write xlsx
+                                5.3.	R Dataset
+                                5.4.	R min() and max()
+                                5.5.	R mean, median and mode
+                                5.6.	R Percentile
+
+                            6.	R Additional Topics
+                                6.1.	R Date
+                                6.2.	R Objects and Classes
+                                6.3.	R S3 Class
+                                6.4.	R S4 Class
+
+                        </span></pre>
+
+                        <h3 id="data_analysis"><strong>Data Analysis with Python</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Introduction to Data Analysis with Python
+                                1.1.	What is Data Analysis?
+                                1.2.	Why Python for Data Analysis?
+                                1.3.	Overview of Python Libraries for Data Analysis
+
+                            2.	Getting Started with Python
+                                2.1.	Installing Python and Anaconda
+                                2.2.	Introduction to Jupyter Notebooks
+
+                            3.	Python Basics for Data Analysis
+                                3.1.	Python Syntax and Data Structures
+                                3.2.	Functions and Modules
+                                3.3.	Working with Packages and Libraries
+
+                            4.	 Importing Datasets
+                                4.1.	Learning Objectives
+                                4.2.	Understanding the Domain
+                                4.3.	Understanding the Dataset
+                                4.4.	Python package for data science
+                                4.5.	Importing and Exporting Data in Python
+                                4.6.	Basic Insights from Datasets
+
+                            5.	 Cleaning and Preparing the Data
+                                5.1.	Identify and Handle Missing Values
+                                5.2.	Data Formatting
+                                5.3.	Data Normalization Sets
+                                5.4.	Binning
+                                5.5.	Indicator variables
+
+                            6.	 Summarizing the Data Frame
+                                6.1.	Descriptive Statistics
+                                6.2.	Basic of Grouping
+                                6.3.	ANOVA
+                                6.4.	Correlation
+                                6.5.	More on Correlation
+
+                            7.	 Model Development
+                                7.1.	Simple and Multiple Linear Regression
+                                7.2.	Model Evaluation Using Visualization
+                                7.3.	Polynomial Regression and Pipelines
+                                7.4.	R-squared and MSE for In-Sample Evaluation
+                                7.5.	Prediction and Decision Making
+
+                            8.	 Model Evaluation
+                                8.1.	Model  Evaluation
+                                8.2.	Over-fitting, Under-fitting, and Model Selection
+                                8.3.	Ridge Regression
+                                8.4.	Grid Search
+                                8.5.	Model Refinement
+
+                        </span></pre>
+
+                        <h3 id="ai"><strong>AI Engineering</strong> <small><a href="#index">Go To Index</a></small></h3>
+                        <pre><span style="font-size: 20px; font-family: serif;">
+                            1.	Introduction to AI
+                                1.1.	What is Artificial Intelligence?
+                                1.2.	Core concepts of AI
+                                1.3.	How does AI works?
+
+                            2.	Machine Learning
+                                2.1.	What is Machine Learning?
+                                2.2.	Types of Machine Learning
+                                2.3.	Supervised Machine Learning
+                                2.4.	Unsupervised Machine Learning
+                                2.5.	Semi-Supervised Machine Learning
+                                2.6.	Reinforcement Machine Learning
+                                2.7.	Machine Learning Algorithms
+                                2.8.	Hands-on demos
+
+                            3.	Deep Learning
+                                3.1.	What is Deep Learning?
+                                3.2.	How does Deep Learning Works?
+                                3.3.	Components of Deep Learning
+                                3.4.	Understanding of ANN, CNN and RNN
+                                3.5.	Hands-on demos
+
+                            4.	NLP (Natural Language Processing)
+                                4.1.	What is NLP?
+                                4.2.	How NLP works?
+                                4.3.	NLP tasks
+                                4.4.	Components of NLP
+                                4.5.	Applications of NLP
+                                4.6.	Hands-on demos
+
+                            5.	Generative AI
+                                5.1.	What is Generative AI?
+                                5.2.	How generative AI works?
+                                5.3.	Generative AI model architecture
+                                5.4.	What generative can create?
+                                5.5.	Hands-on demos
+
+                            6.	Open Computer Vision (OpenCV)
+                                6.1.	What is OpenCV?
+                                6.2.	What is OpenCV used for?
+                                6.3.	Applications of OpenCV
+                                6.4.	Features of OpenCV
+                                6.5.    Hands-on demos
+
+                        </span></pre>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

@@ -83,3 +83,6 @@ class JobApplication(View):
         resume.save()
         return redirect('IndexPage')
     
+def course(request):
+    return render(request, 'courses.html')
+

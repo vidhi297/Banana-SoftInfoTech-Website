@@ -147,6 +147,54 @@ body{
     display: none;
 }
 
+.courses{
+    min-height: 55vh;
+    width: 100vw;
+    top: -3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    line-height: 10rem;
+}
+
+.courses .row{
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+}
+
+.courses .row .content{
+    text-align: justify;
+}
+
+.courses .row .content h3{
+    font-size: 3rem;
+    color: black;
+}
+
+.courses .row .content p{
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.courses .row .content ul{
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.courses .row .content ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.courses .row .content ul li a:hover{
+    color: #00bfff;
+    text-decoration: underline;
+}
+
 .home{
     min-height: 100vh;
     width: 100vw;
